@@ -7,12 +7,60 @@ import Three from './assets/Three.jpg'
 import Four from './assets/Four.jpg'
 import Five from './assets/Five.jpg'
 import Seven from './assets/Seven.jpg'
-
 import Nine from './assets/Nine.jpg'
 import Ten from './assets/Ten.jpg'
+import Zoo1 from './assets/Zoo1.jpg'
+import Zoo2 from './assets/Zoo2.jpg'
+import Zoo3 from './assets/Zoo3.jpg'
+import Zoo4 from './assets/Zoo4.jpg'
+import Zoo5 from './assets/Zoo5.jpg'
+import Zoo6 from './assets/Zoo6.jpg'
+import Zoo7 from './assets/Zoo7.jpg'
+import Zoo8 from './assets/Zoo8.jpg'
+import TTd1 from './assets/TTd1.jpg'
+import TTd2 from './assets/TTd2.jpg'
+import khs1 from './assets/khs1.jpg'
+import khs2 from './assets/khs2.jpg'
+import Bd2 from './assets/Bd2.jpg'
+import Bd3 from './assets/Bd3.jpg'
+import Bd4 from './assets/Bd4.jpg'
+import Clg from './assets/Clg.jpg'
+import Clg2 from './assets/Clg2.jpg'
+import Fd from './assets/Fd.jpg'
+import New1 from './assets/New1.jpg'
+import New2 from './assets/New2.jpg'
+import New3 from './assets/New3.jpg'
+import New4 from './assets/New4.jpg'
+import New5 from './assets/New5.jpg'
+import New6 from './assets/New6.jpg'
+import New7 from './assets/New7.jpg'
+import New8 from './assets/New8.jpg'
+import New9 from './assets/New9.jpg'
+import New10 from './assets/New10.jpg'
+import New11 from './assets/New11.jpg'
+import New12 from './assets/New12.jpg'
+import New13 from './assets/New13.jpg'
+import New14 from './assets/New14.jpg'
+import New15 from './assets/New15.jpg'
+import New16 from './assets/New16.jpg'
+import New17 from './assets/New17.jpg'
+import New18 from './assets/New18.jpg'
+import New19 from './assets/New19.jpg'
+
 
 import Abc from  './assets/video/Abc.mp4' 
 import Dog from  './assets/video/Dog.mp4'
+import Song from './assets/video/Song.mp4'
+import Ball from './assets/video/Ball.mp4'
+import Cat from './assets/video/Cat.mp4'
+import Dance from './assets/video/Dance.mp4'
+import Cell from './assets/video/Cell.mp4'
+import Fish from './assets/video/Fish.mp4'
+import Rat from './assets/video/Rat.mp4'
+import Orange from './assets/video/Orange.mp4'
+import Meow from './assets/video/Meow.mp4'
+import Bd from './assets/video/Bd.mp4'
+
 import { Heart, Camera, Video, Sparkles, Calendar, MapPin, Clock, Users, MessageCircle, Music, Gift, Star, Award, Smile, Coffee, Plane, BookOpen, Laugh, Trophy, Zap, ArrowRight, ChevronDown } from 'lucide-react';
 import { Download } from "lucide-react";
 export default function App() {
@@ -56,22 +104,73 @@ const downloadImage = async (url, filename) => {
 
   // Sample data - you can replace with your own photos and memories
   const photos = [
-    { id: 1, url: Eight, caption: 'Summer adventures 2024', date: 'July 2024' },
-    { id: 2, url: Two, caption: 'Just being us', date: 'October 2024' },
-    { id: 3, url: Three, caption: 'Summer adventures 2024', date: 'July 2024' },
-    { id: 4, url: Four, caption: 'Coffee talks and laughs', date: 'March 2024' },
-    { id: 5, url: Five, caption: 'Road trip memories', date: 'June 2024' },
-    { id: 6, url: Six, caption: 'Late night hangouts', date: 'August 2024' },
-    { id: 7, url: Seven, caption: 'Celebrating together', date: 'September 2024' },
-    { id: 8, url: One, caption: 'Just being us', date: 'October 2024' },
-    { id: 9, url: Nine, caption: 'Just being us', date: 'October 2024' },
-    { id: 10, url: Ten, caption: 'Just being us', date: 'October 2024' },
+    { id: 1, url: Eight, caption: 'Summer adventures 2024', date: '5 June 2023' },
+    { id: 3, url: Three, caption: 'Summer adventures 2024', date: '5 June 2023' },
+    { id: 6, url: Six, caption: 'Late night hangouts', date: '6 June 2023' },
+    { id: 9, url: Nine, caption: 'Just being us', date: '9 November 2023' },
+    { id: 4, url: Four, caption: 'Coffee talks and laughs', date: '11 November 2023' },
+    { id: 5, url: Five, caption: 'Road trip memories', date: '9 December 2023' },
+    { id: 8, url: One, caption: 'Just being us', date: '9 December 2023' },
+    { id: 7, url: Seven, caption: 'Celebrating together', date: '16 March 2024' },
+    { id: 2, url: Two, caption: 'Just being us', date: '4 May 2024' },
+    { id: 10, url: Ten, caption: 'Just being us', date: '25 March 2025' },
+    { id: 14, url: Fd, caption: 'Just being us', date: '16 April 2025' },
+    { id: 11, url: TTd1, caption: 'Just being us', date: '4 June 2025' },
+    { id: 15, url: TTd2, caption: 'Just being us', date: '4 June 2025' },
+    { id: 16, url: khs1, caption: 'Just being us', date: '11 October 2025' },
+    { id: 17, url: khs2, caption: 'Just being us', date: '11 October2025' },
+    { id: 18, url: Bd4, caption: 'Just being us', date: '4 November 2025' },
+    { id: 19, url: Bd3, caption: 'Just being us', date: '4 November 2025' },
+    { id: 20, url: Bd2, caption: 'Just being us', date: '4 November 2025' },
+    { id: 12, url: Clg, caption: 'Just being us', date: '24 November 2025' },
+    { id: 13, url: Clg2, caption: 'Just being us', date: '24 November 2025' },
+    { id: 21, url: Zoo1, caption: 'Just being us', date: '28 November 2025' },
+    { id: 22, url: Zoo2, caption: 'Just being us', date: '28 November 2025' },
+    { id: 23, url: Zoo3, caption: 'Just being us', date: '28 November 2025' },
+    { id: 24, url: Zoo4, caption: 'Just being us', date: '28 November 2025' },
+    { id: 25, url: Zoo5, caption: 'Just being us', date: '28 November 2025' },
+    { id: 26, url: Zoo6, caption: 'Just being us', date: '28 November 2025' },
+    { id: 27, url: Zoo7, caption: 'Just being us', date: '28 November 2025' },
+    { id: 28, url: Zoo8, caption: 'Just being us', date: '28 November 2025' },
+    { id: 29, url: New1, caption: 'Just being us', date: '14 December 2025' },
+    { id: 30, url: New2, caption: 'Just being us', date: '14 December 2025' },
+    { id: 31, url: New3, caption: 'Just being us', date: '14 December 2025' },
+    { id: 32, url: New4, caption: 'Just being us', date: '14 December 2025' },
+    { id: 33, url: New5, caption: 'Just being us', date: '14 December 2025' },
+    { id: 34, url: New6, caption: 'Just being us', date: '14 December 2025' },
+    { id: 35, url: New7, caption: 'Just being us', date: '14 December 2025' },
+    { id: 36, url: New8, caption: 'Just being us', date: '18 December 2025' },
+    { id: 37, url: New9, caption: 'Just being us', date: '18 December 2025' },
+    { id: 38, url: New10, caption: 'Just being us', date: '18 December 2025' },
+    { id: 39, url: New11, caption: 'Just being us', date: '18 December 2025' },
+    { id: 40, url: New12, caption: 'Just being us', date: '18 December 2025' },
+    { id: 41, url: New13, caption: 'Just being us', date: '18 December 2025' },
+    { id: 42, url: New14, caption: 'Just being us', date: '18 December 2025' },
+    { id: 43, url: New15, caption: 'Just being us', date: '21 January 2026' },
+    { id: 44, url: New16, caption: 'Just being us', date: '21 January 2026' },
+    { id: 45, url: New17, caption: 'Just being us', date: '21 January 2026' },
+    { id: 46, url: New18, caption: 'Just being us', date: '21 January 2026' },
+    { id: 47, url: New19, caption: 'Just being us', date: '21 January 2026' },
   ];
 
   const videos = [
     { id: 1, src: Dog, title: 'Our First Vlog', thumbnail: One, duration: '3:45' },
     { id: 2, src: Abc, title: 'Birthday Surprise', thumbnail: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400', duration: '2:30' },
-    { id: 3, src: "", title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 3, src: Song, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 4, src: Cell, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 5, src: Ball, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 6, src: Dance, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 7, src: Cat, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 8, src: Fish, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 9, src: Rat, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 10, src: Orange, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 11, src: Meow, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 12, src: Bd, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+ 
+ 
+ 
+ 
+ 
   ];
   const [selectedVideo, setSelectedVideo] = useState(null);
 
