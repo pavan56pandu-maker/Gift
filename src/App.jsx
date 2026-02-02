@@ -4,15 +4,15 @@ import Six from './assets/Six.jpg'
 import One from './assets/One.jpg'
 import Two from './assets/Two.jpg'
 import Three from './assets/Three.jpg'
-// import Four from './assets/four.jpg'
-import Five from './assets/five.jpg'
+import Four from './assets/Four.jpg'
+import Five from './assets/Five.jpg'
 import Seven from './assets/Seven.jpg'
 
 import Nine from './assets/Nine.jpg'
 import Ten from './assets/Ten.jpg'
 
-// import Abc from  './assets/video/Abc.mp4' 
-// import Dog from  './assets/video/Dog.mp4'
+import Abc from  './assets/video/Abc.mp4' 
+import Dog from  './assets/video/Dog.mp4'
 import { Heart, Camera, Video, Sparkles, Calendar, MapPin, Clock, Users, MessageCircle, Music, Gift, Star, Award, Smile, Coffee, Plane, BookOpen, Laugh, Trophy, Zap, ArrowRight, ChevronDown } from 'lucide-react';
 import { Download } from "lucide-react";
 export default function App() {
@@ -59,7 +59,7 @@ const downloadImage = async (url, filename) => {
     { id: 1, url: Eight, caption: 'Summer adventures 2024', date: 'July 2024' },
     { id: 2, url: Two, caption: 'Just being us', date: 'October 2024' },
     { id: 3, url: Three, caption: 'Summer adventures 2024', date: 'July 2024' },
-    { id: 4, url: Two, caption: 'Coffee talks and laughs', date: 'March 2024' },
+    { id: 4, url: Four, caption: 'Coffee talks and laughs', date: 'March 2024' },
     { id: 5, url: Five, caption: 'Road trip memories', date: 'June 2024' },
     { id: 6, url: Six, caption: 'Late night hangouts', date: 'August 2024' },
     { id: 7, url: Seven, caption: 'Celebrating together', date: 'September 2024' },
@@ -69,8 +69,8 @@ const downloadImage = async (url, filename) => {
   ];
 
   const videos = [
-    { id: 1, src: "", title: 'Our First Vlog', thumbnail: One, duration: '3:45' },
-    { id: 2, src: "", title: 'Birthday Surprise', thumbnail: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400', duration: '2:30' },
+    { id: 1, src: Dog, title: 'Our First Vlog', thumbnail: One, duration: '3:45' },
+    { id: 2, src: Abc, title: 'Birthday Surprise', thumbnail: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400', duration: '2:30' },
     { id: 3, src: "", title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
   ];
   const [selectedVideo, setSelectedVideo] = useState(null);
