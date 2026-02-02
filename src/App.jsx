@@ -19,8 +19,8 @@ import Zoo7 from './assets/Zoo7.jpg'
 import Zoo8 from './assets/Zoo8.jpg'
 import TTd1 from './assets/TTd1.jpg'
 import TTd2 from './assets/TTd2.jpg'
-import khs1 from './assets/khs1.jpg'
-import khs2 from './assets/khs2.jpg'
+import Khs1 from './assets/Khs1.jpg'
+import Khs2 from './assets/Khs2.jpg'
 import Bd2 from './assets/Bd2.jpg'
 import Bd3 from './assets/Bd3.jpg'
 import Bd4 from './assets/Bd4.jpg'
@@ -117,8 +117,8 @@ const downloadImage = async (url, filename) => {
     { id: 14, url: Fd, caption: 'Just being us', date: '16 April 2025' },
     { id: 11, url: TTd1, caption: 'Just being us', date: '4 June 2025' },
     { id: 15, url: TTd2, caption: 'Just being us', date: '4 June 2025' },
-    { id: 16, url: khs1, caption: 'Just being us', date: '11 October 2025' },
-    { id: 17, url: khs2, caption: 'Just being us', date: '11 October2025' },
+    { id: 16, url: Khs1, caption: 'Just being us', date: '11 October 2025' },
+    { id: 17, url: Khs2, caption: 'Just being us', date: '11 October2025' },
     { id: 18, url: Bd4, caption: 'Just being us', date: '4 November 2025' },
     { id: 19, url: Bd3, caption: 'Just being us', date: '4 November 2025' },
     { id: 20, url: Bd2, caption: 'Just being us', date: '4 November 2025' },
