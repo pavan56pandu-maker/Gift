@@ -4,7 +4,7 @@ import Six from './assets/Six.jpg'
 import One from './assets/One.jpg'
 import Two from './assets/Two.jpg'
 import Three from './assets/Three.jpg'
-import Four from './assets/four.jpg'
+// import Four from './assets/four.jpg'
 import Five from './assets/five.jpg'
 import Seven from './assets/Seven.jpg'
 
@@ -59,7 +59,7 @@ const downloadImage = async (url, filename) => {
     { id: 1, url: Eight, caption: 'Summer adventures 2024', date: 'July 2024' },
     { id: 2, url: Two, caption: 'Just being us', date: 'October 2024' },
     { id: 3, url: Three, caption: 'Summer adventures 2024', date: 'July 2024' },
-    { id: 4, url: Four, caption: 'Coffee talks and laughs', date: 'March 2024' },
+    { id: 4, url: Two, caption: 'Coffee talks and laughs', date: 'March 2024' },
     { id: 5, url: Five, caption: 'Road trip memories', date: 'June 2024' },
     { id: 6, url: Six, caption: 'Late night hangouts', date: 'August 2024' },
     { id: 7, url: Seven, caption: 'Celebrating together', date: 'September 2024' },
