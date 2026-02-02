@@ -1,9 +1,36 @@
 import React, { useState } from 'react';
+import Eight from './assets/Eight.jpg'
+import Six from './assets/Six.jpg'
 import One from './assets/One.jpg'
-import { Heart, Camera, Video, Sparkles, Calendar, MapPin, Clock, Users, MessageCircle, Music, Gift, Star, Award, Smile, Coffee, Plane, BookOpen, Laugh, Trophy, Zap, ArrowRight, ChevronDown } from 'lucide-react';
+import Two from './assets/Two.jpg'
+import Three from './assets/Three.jpg'
+import Four from './assets/four.jpg'
+import Five from './assets/five.jpg'
+import Seven from './assets/Seven.jpg'
 
+import Nine from './assets/Nine.jpg'
+import Ten from './assets/Ten.jpg'
+
+import Abc from  './assets/video/Abc.mp4' 
+import Dog from  './assets/video/Dog.mp4'
+import { Heart, Camera, Video, Sparkles, Calendar, MapPin, Clock, Users, MessageCircle, Music, Gift, Star, Award, Smile, Coffee, Plane, BookOpen, Laugh, Trophy, Zap, ArrowRight, ChevronDown } from 'lucide-react';
+import { Download } from "lucide-react";
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
+const downloadImage = async (url, filename) => {
+  const response = await fetch(url);
+  const blob = await response.blob();
+  const blobUrl = window.URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+  link.href = blobUrl;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+
+  document.body.removeChild(link);
+  window.URL.revokeObjectURL(blobUrl);
+};
 
   // Add custom styles for animations
   const styles = `
@@ -29,20 +56,25 @@ export default function App() {
 
   // Sample data - you can replace with your own photos and memories
   const photos = [
-    { id: 1, url: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400', caption: 'Summer adventures 2024', date: 'July 2024' },
-    { id: 2, url: One, caption: 'Summer adventures 2024', date: 'July 2024' },
-    { id: 2, url: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400', caption: 'Coffee talks and laughs', date: 'March 2024' },
-    { id: 3, url: 'https://images.unsplash.com/photo-1528605105345-5344ea20e269?w=400', caption: 'Road trip memories', date: 'June 2024' },
-    { id: 4, url: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400', caption: 'Late night hangouts', date: 'August 2024' },
-    { id: 5, url: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400', caption: 'Celebrating together', date: 'September 2024' },
-    { id: 6, url: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400', caption: 'Just being us', date: 'October 2024' },
+    { id: 1, url: Eight, caption: 'Summer adventures 2024', date: 'July 2024' },
+    { id: 2, url: Two, caption: 'Just being us', date: 'October 2024' },
+    { id: 3, url: Three, caption: 'Summer adventures 2024', date: 'July 2024' },
+    { id: 4, url: Four, caption: 'Coffee talks and laughs', date: 'March 2024' },
+    { id: 5, url: Five, caption: 'Road trip memories', date: 'June 2024' },
+    { id: 6, url: Six, caption: 'Late night hangouts', date: 'August 2024' },
+    { id: 7, url: Seven, caption: 'Celebrating together', date: 'September 2024' },
+    { id: 8, url: One, caption: 'Just being us', date: 'October 2024' },
+    { id: 9, url: Nine, caption: 'Just being us', date: 'October 2024' },
+    { id: 10, url: Ten, caption: 'Just being us', date: 'October 2024' },
   ];
 
   const videos = [
-    { id: 1, title: 'Our First Vlog', thumbnail: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400', duration: '3:45' },
-    { id: 2, title: 'Birthday Surprise', thumbnail: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400', duration: '2:30' },
-    { id: 3, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 1, src: Abc, title: 'Our First Vlog', thumbnail: One, duration: '3:45' },
+    { id: 2, src: Dog, title: 'Birthday Surprise', thumbnail: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400', duration: '2:30' },
+    { id: 3, src: Dog, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
   ];
+  const [selectedVideo, setSelectedVideo] = useState(null);
+
 
   const moments = [
     { id: 1, title: 'The Day We Met', description: 'Who knew that random encounter would turn into the best friendship ever?', date: 'January 15, 2020', location: 'Coffee Shop Downtown', icon: Heart },
@@ -327,18 +359,58 @@ export default function App() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 max-w-7xl mx-auto">
         {photos.map((photo) => (
-          <div key={photo.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:scale-105">
-            <img 
-              src={photo.url} 
-              alt={photo.caption}
-              className="w-full h-80 object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
-              <div className="p-6 text-white">
-                <h3 className="text-xl font-semibold">{photo.caption}</h3>
-                <p className="text-sm text-gray-300">{photo.date}</p>
-              </div>
-            </div>
+  //         <div key={photo.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:scale-105">
+  //           <img 
+  //             src={photo.url} 
+  //             alt={photo.caption}
+  //             className="w-full h-80 object-cover"
+  //           />
+  //             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-between p-4">
+
+  //   {/* Download Button */}
+  //   <button
+  //   onClick={() => downloadImage(photo.url, `photo-${photo.id}.jpg`)}
+  //   className="self-end bg-white px-3 py-2 rounded-lg text-sm font-semibold hover:bg-pink-500 hover:text-white transition"
+  // >
+  //   ⬇ Download
+  // </button>
+            
+  //           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
+  //             <div className="p-6 text-white">
+  //               <h3 className="text-xl font-semibold">{photo.caption}</h3>
+  //               <p className="text-sm text-gray-300">{photo.date}</p>
+  //             </div>
+  //           </div>
+  //         </div>
+  <div key={photo.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:scale-105">
+  <img
+    src={photo.url}
+    alt={photo.caption}
+    className="w-full h-80 object-cover"
+  />
+
+  {/* SINGLE OVERLAY */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent
+                  opacity-0 group-hover:opacity-100 transition-opacity
+                  flex flex-col justify-between p-4">
+
+    {/* Download */}
+    <button
+      onClick={() => downloadImage(photo.url, `photo-${photo.id}.jpg`)}
+      className="self-end bg-white/90 px-3 py-2 rounded-lg text-sm font-semibold
+                 hover:bg-pink-500 hover:text-white transition"
+    >
+      ⬇ Download
+    </button>
+
+    {/* Caption */}
+    <div className="text-white">
+      <h3 className="text-xl font-semibold">{photo.caption}</h3>
+      <p className="text-sm text-gray-300">{photo.date}</p>
+    </div>
+  </div>
+{/* </div> */}
+
           </div>
         ))}
       </div>
@@ -354,12 +426,13 @@ export default function App() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 max-w-7xl mx-auto">
         {videos.map((video) => (
-          <div key={video.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer">
+          <div key={video.id}  onClick={() => setSelectedVideo(video)} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer">
             <img 
               src={video.thumbnail} 
               alt={video.title}
               className="w-full h-64 object-cover"
             />
+
             <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
               <div className="bg-white/90 rounded-full p-6 group-hover:scale-110 transition-transform">
                 <Video className="w-12 h-12 text-pink-500" />
@@ -371,6 +444,7 @@ export default function App() {
             </div>
           </div>
         ))}
+    
       </div>
     </div>
   );
@@ -458,6 +532,37 @@ export default function App() {
         {activeSection === 'videos' && renderVideos()}
         {activeSection === 'moments' && renderMoments()}
       </main>
+      {/* VIDEO PLAYER MODAL */}
+{selectedVideo && (
+  <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center">
+    
+    <div className="bg-white rounded-2xl p-4 max-w-3xl w-full relative">
+      
+      {/* Close button */}
+     <button
+  onClick={() => setSelectedVideo(null)}
+  className="absolute top-3 right-3 text-2xl font-bold text-gray-600 hover:text-red-500"
+>
+  ✕
+</button>
+
+
+      {/* VIDEO READER */}
+      <video
+        src={selectedVideo.src}
+        controls
+        autoPlay
+        className="w-full rounded-xl"
+      />
+
+      <h3 className="mt-4 text-xl font-bold text-gray-800">
+        {selectedVideo.title}
+      </h3>
+    </div>
+
+  </div>
+)}
+
 
       {/* Footer */}
       <footer className="bg-white/80 backdrop-blur-md mt-20 py-8">
