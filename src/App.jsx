@@ -69,9 +69,9 @@ const downloadImage = async (url, filename) => {
   ];
 
   const videos = [
-    { id: 1, src: Abc, title: 'Our First Vlog', thumbnail: One, duration: '3:45' },
-    { id: 2, src: Dog, title: 'Birthday Surprise', thumbnail: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400', duration: '2:30' },
-    { id: 3, src: Dog, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
+    { id: 1, src: "", title: 'Our First Vlog', thumbnail: One, duration: '3:45' },
+    { id: 2, src: "", title: 'Birthday Surprise', thumbnail: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400', duration: '2:30' },
+    { id: 3, src: "", title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
   ];
   const [selectedVideo, setSelectedVideo] = useState(null);
 
