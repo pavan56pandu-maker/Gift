@@ -11,8 +11,8 @@ import Seven from './assets/Seven.jpg'
 import Nine from './assets/Nine.jpg'
 import Ten from './assets/Ten.jpg'
 
-import Abc from  './assets/video/Abc.mp4' 
-import Dog from  './assets/video/Dog.mp4'
+// import Abc from  './assets/video/Abc.mp4' 
+// import Dog from  './assets/video/Dog.mp4'
 import { Heart, Camera, Video, Sparkles, Calendar, MapPin, Clock, Users, MessageCircle, Music, Gift, Star, Award, Smile, Coffee, Plane, BookOpen, Laugh, Trophy, Zap, ArrowRight, ChevronDown } from 'lucide-react';
 import { Download } from "lucide-react";
 export default function App() {
