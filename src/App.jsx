@@ -176,27 +176,27 @@ const downloadImage = async (url, filename) => {
 
 
   const moments = [
-    { id: 1, title: 'The Day We Met', description: 'Who knew that random encounter would turn into the best friendship ever?', date: 'October 2, 2022', location: 'Eng Work Shop', icon: Heart },
-    { id: 2, title: 'First Road Trip', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'May 4, 2024', location: 'Ramapuram', icon: MapPin },
-    { id: 3, title: 'Dare Trip', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'June 4, 2025', location: 'Tirumala', icon: MapPin },
-    { id: 4, title: 'Everlasting Memories', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'October 11, 2025', location: 'SriKalahasti', icon: MapPin },
-    { id: 5, title: 'Birthday Special', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'November 4, 2025', location: 'Tirupati', icon: MapPin },
-    { id: 6, title: 'Zoo Park Fun', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'November 28, 2025', location: 'Zoo Park', icon: MapPin },
-    { id: 7, title: 'Tirumala ', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'December 14, 2025', location: 'Tirumala', icon: MapPin },
-     { id: 8, title: 'Enjoying Nature', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'January 21, 2026', location: 'Mamandur', icon: MapPin },
-    { id: 9, title: 'Late Night Deep Talks', description: 'Those 3 AM conversations about life, dreams, and everything in between. Pure magic.', date: 'August 10, 2021', location: 'Your Place', icon: Clock },
-    { id: 10, title: 'Supporting Each Other', description: 'Through ups and downs, we\'ve always had each other\'s backs. That\'s what real friendship is.', date: 'March 5, 2022', location: 'Always', icon: Heart },
-    { id: 11, title: 'Adventures Continue', description: 'Here\'s to many more memories, laughs, and adventures together!', date: 'Present', location: 'Everywhere', icon: Sparkles },
+    { id: 1, title: 'The Day We Met', description: 'As far as I think, that was our first meeting during the engineering workshop', date: 'October 2, 2022', location: 'Eng Work Shop', icon: Heart },
+    { id: 2, title: 'First Road Trip', description: 'Our first adventure together, exploring new places and making unforgettable memories.', date: 'May 4, 2024', location: 'Ramapuram', icon: MapPin },
+    { id: 3, title: 'Dare Trip', description: 'Our first dare trip together, full of excitement and surprises.', date: 'June 4, 2025', location: 'Tirumala', icon: MapPin },
+    { id: 4, title: 'Everlasting Memories', description: 'The memories we made together are timeless and precious.', date: 'October 11, 2025', location: 'SriKalahasti', icon: MapPin },
+    { id: 5, title: 'Birthday Special', description: 'unexpected Things happened on your birthday and that movement of slipping on the bike is personal', date: 'November 4, 2025', location: 'Tirupati', icon: MapPin },
+    { id: 6, title: 'Zoo Park Fun', description: 'Our fun-filled day at the zoo, filled with laughter and excitement.', date: 'November 28, 2025', location: 'Zoo Park', icon: MapPin },
+    { id: 7, title: 'Tirumala ', description: 'Our visit to Tirumala was filled with joy and spiritual vibes.Baagundi😋', date: 'December 14, 2025', location: 'Tirumala', icon: MapPin },
+     { id: 8, title: 'Enjoying Nature', description: 'Our peaceful moments in nature, surrounded by greenery and calm.and then went to Dmart and Movie', date: 'January 21, 2026', location: 'Mamandur', icon: MapPin },
+    { id: 9, title: 'Late Night Deep Talks', description: 'Those late night conversations that went on for hours, sharing thoughts, dreams, and secrets.', date: 'Always', location: 'Instagram', icon: Clock },
+    { id: 10, title: 'Supporting Each Other', description: 'Through every challenge and triumph, we supported each other unconditionally.', date: 'Every Moment', location: 'Always', icon: Heart },
+    { id: 11, title: 'Adventures Continue', description: 'The journey continues with new adventures and shared experiences.', date: 'Present', location: 'Everywhere', icon: Sparkles },
   ];
 
   // Extended moments for best memories
   const bestMoments = [
-    { id: 1, title: 'Spontaneous Bike Drive', description: 'When we decided at 11 PM to drive to the beach just to see the sunrise. Best decision ever!', icon: Plane, color: 'from-orange-400 to-pink-500' },
-    { id: 2, title: 'Inside Jokes Galore', description: 'We have so many inside jokes that sometimes we communicate in a language only we understand.', icon: Laugh, color: 'from-yellow-400 to-orange-500' },
-    { id: 3, title: 'Always There', description: 'Through every breakup, every job change, every family drama - we\'ve been each other\'s rock.', icon: Heart, color: 'from-red-400 to-pink-500' },
-    { id: 4, title: 'Adventure Partners', description: 'From hiking mountains to trying weird food - if one of us is doing it, both of us are doing it!', icon: Trophy, color: 'from-green-400 to-teal-500' },
-    { id: 5, title: 'Coffee Shop Rituals', description: 'Our weekly coffee meetups where we solve the world\'s problems (and create new ones).', icon: Coffee, color: 'from-amber-600 to-yellow-500' },
-    { id: 6, title: 'Music & Dance Sessions', description: 'Random dance parties in the living room at 2 AM because a good song came on.', icon: Music, color: 'from-purple-400 to-pink-500' },
+    { id: 1, title: 'Spontaneous Bike Drive', description: 'Two friends, one bike, and endless roads—roaring into the world with fearless hearts.Laughter in the wind, memories written in every mile.', icon: Plane, color: 'from-orange-400 to-pink-500' },
+    { id: 2, title: 'Inside Jokes Galore', description: 'Laughing at jokes no one else understands and smiling without reasons.Our inside jokes are memories wrapped in laughter only we can decode.', icon: Laugh, color: 'from-yellow-400 to-orange-500' },
+    { id: 3, title: 'Always There', description: 'Through every high and low, we stood side by side without questions.Not just friends—always there, always real, always together.', icon: Heart, color: 'from-red-400 to-pink-500' },
+    { id: 4, title: 'Adventure Partners', description: 'From unknown roads to thrilling places, we chase adventures side by side.New environments, wild vibes and Every adventure felt safer, crazier, and more meaningful', icon: Trophy, color: 'from-green-400 to-teal-500' },
+    { id: 5, title: 'Coffee Shop Rituals', description: 'Coffee stops, long conversations, random restaurants, and street-side shops.These small coffee breaks turned into big memories.', icon: Coffee, color: 'from-amber-600 to-yellow-500' },
+    { id: 6, title: 'Music & Dance Sessions', description: 'Music on full volume, singing wrong lyrics, dancing without rules.We don’t need perfection—just vibes and moments.', icon: Music, color: 'from-purple-400 to-pink-500' },
   ];
 
   // Friendship characteristics
@@ -232,8 +232,9 @@ const downloadImage = async (url, filename) => {
           </h1>
           
           <p className="text-2xl md:text-3xl text-gray-700 max-w-3xl mx-auto font-medium leading-relaxed">
-            A celebration of the unbreakable bond we share, the countless memories we've created, 
-            and the infinite adventures waiting for us
+            Two souls chasing the same horizon 🌅
+Where laughter echoes and worries fade away 😄
+Every journey feels like home when we’re together 💫
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mt-12">
@@ -381,17 +382,13 @@ const downloadImage = async (url, filename) => {
           
           <div className="bg-white rounded-3xl shadow-2xl p-12 border-4 border-pink-200">
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              True friendship isn't about being inseparable—it's about being separated and nothing changes. 
-              Through every laugh that echoed through empty streets at midnight, every tear wiped away with 
-              understanding, every spontaneous adventure that turned into legendary stories, and every quiet 
-              moment of comfortable silence, we've built something truly extraordinary.
+                    What makes us special isn’t just the time we spend together—it’s how every moment turns into a memory ✨ From endless bike rides 🏍️ with no destination to late-night adventures 🌙 fueled by laughter 😄, we move through life side by side.
+
+Our jokes never run out 😂, our smiles come naturally 😊, and even silence feels comfortable 🤍 when we’re together. We chase new roads 🛣️, discover new places 🌍, sing loudly to random songs 🎶, and dance without caring who’s watching 💃🕺.
             </p>
             
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              This website is more than just a collection of photos and videos. It's a living testament to 
-              our journey together—a digital scrapbook of inside jokes that make us burst into laughter in 
-              public, deep conversations that lasted until dawn, supporting each other through life's ups 
-              and downs, and the countless little moments that make our friendship one of a kind.
+                    Through coffee stops ☕, street food 🍔, music vibes 🎧, and spontaneous plans ⚡, we’ve built a bond full of joy and freedom 🌈 No matter where life takes us, our friendship keeps roaring forward 🔥—happy, fearless, and always together 🤝💫
             </p>
 
             <p className="text-xl text-gray-700 leading-relaxed font-semibold text-center">
