@@ -176,16 +176,22 @@ const downloadImage = async (url, filename) => {
 
 
   const moments = [
-    { id: 1, title: 'The Day We Met', description: 'Who knew that random encounter would turn into the best friendship ever?', date: 'January 15, 2020', location: 'Coffee Shop Downtown', icon: Heart },
-    { id: 2, title: 'First Road Trip', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'May 22, 2020', location: 'Coast Highway', icon: MapPin },
-    { id: 3, title: 'Late Night Deep Talks', description: 'Those 3 AM conversations about life, dreams, and everything in between. Pure magic.', date: 'August 10, 2021', location: 'Your Place', icon: Clock },
-    { id: 4, title: 'Supporting Each Other', description: 'Through ups and downs, we\'ve always had each other\'s backs. That\'s what real friendship is.', date: 'March 5, 2022', location: 'Always', icon: Heart },
-    { id: 5, title: 'Adventures Continue', description: 'Here\'s to many more memories, laughs, and adventures together!', date: 'Present', location: 'Everywhere', icon: Sparkles },
+    { id: 1, title: 'The Day We Met', description: 'Who knew that random encounter would turn into the best friendship ever?', date: 'October 2, 2022', location: 'Eng Work Shop', icon: Heart },
+    { id: 2, title: 'First Road Trip', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'May 4, 2024', location: 'Ramapuram', icon: MapPin },
+    { id: 3, title: 'First Road Trip', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'June 4, 2025', location: 'Tirumala', icon: MapPin },
+    { id: 4, title: 'First Road Trip', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'October 11, 2025', location: 'SriKalahasti', icon: MapPin },
+    { id: 5, title: 'First Road Trip', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'November 4, 2025', location: 'Tirupati', icon: MapPin },
+    { id: 6, title: 'First Road Trip', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'November 28, 2025', location: 'Zoo Park', icon: MapPin },
+    { id: 7, title: 'First Road Trip', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'December 14, 2025', location: 'Tirumala', icon: MapPin },
+     { id: 8, title: 'First Road Trip', description: 'Getting lost was half the fun. Remember when we took that wrong turn and ended up at that amazing sunset spot?', date: 'January 21, 2026', location: 'Mamandur', icon: MapPin },
+    { id: 9, title: 'Late Night Deep Talks', description: 'Those 3 AM conversations about life, dreams, and everything in between. Pure magic.', date: 'August 10, 2021', location: 'Your Place', icon: Clock },
+    { id: 10, title: 'Supporting Each Other', description: 'Through ups and downs, we\'ve always had each other\'s backs. That\'s what real friendship is.', date: 'March 5, 2022', location: 'Always', icon: Heart },
+    { id: 11, title: 'Adventures Continue', description: 'Here\'s to many more memories, laughs, and adventures together!', date: 'Present', location: 'Everywhere', icon: Sparkles },
   ];
 
   // Extended moments for best memories
   const bestMoments = [
-    { id: 1, title: 'Spontaneous Midnight Drive', description: 'When we decided at 11 PM to drive to the beach just to see the sunrise. Best decision ever!', icon: Plane, color: 'from-orange-400 to-pink-500' },
+    { id: 1, title: 'Spontaneous Bike Drive', description: 'When we decided at 11 PM to drive to the beach just to see the sunrise. Best decision ever!', icon: Plane, color: 'from-orange-400 to-pink-500' },
     { id: 2, title: 'Inside Jokes Galore', description: 'We have so many inside jokes that sometimes we communicate in a language only we understand.', icon: Laugh, color: 'from-yellow-400 to-orange-500' },
     { id: 3, title: 'Always There', description: 'Through every breakup, every job change, every family drama - we\'ve been each other\'s rock.', icon: Heart, color: 'from-red-400 to-pink-500' },
     { id: 4, title: 'Adventure Partners', description: 'From hiking mountains to trying weird food - if one of us is doing it, both of us are doing it!', icon: Trophy, color: 'from-green-400 to-teal-500' },
@@ -197,9 +203,9 @@ const downloadImage = async (url, filename) => {
   const friendshipTraits = [
     { trait: 'Trust Level', value: '100%', icon: Heart, color: 'text-red-500' },
     { trait: 'Laugh Meter', value: 'Infinite', icon: Smile, color: 'text-yellow-500' },
-    { trait: 'Inside Jokes', value: '847+', icon: MessageCircle, color: 'text-blue-500' },
+    { trait: 'Inside Jokes', value: '10000+', icon: MessageCircle, color: 'text-blue-500' },
     { trait: 'Adventures', value: 'Countless', icon: Plane, color: 'text-green-500' },
-    { trait: 'Deep Talks', value: 'Every Week', icon: BookOpen, color: 'text-purple-500' },
+    { trait: 'Deep Talks', value: 'Every Day', icon: BookOpen, color: 'text-purple-500' },
     { trait: 'Support System', value: 'Unbreakable', icon: Award, color: 'text-orange-500' },
   ];
 
@@ -343,12 +349,12 @@ const downloadImage = async (url, filename) => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-10 text-center transform hover:scale-110 transition-all border-2 border-white/20 hover:bg-white/20">
               <Camera className="w-16 h-16 text-pink-300 mx-auto mb-6" />
-              <h3 className="text-5xl font-black text-white mb-3">{photos.length}+</h3>
+              <h3 className="text-5xl font-black text-white mb-3">300+</h3>
               <p className="text-white/90 text-lg font-semibold">Photos Captured</p>
             </div>
             <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-10 text-center transform hover:scale-110 transition-all border-2 border-white/20 hover:bg-white/20">
               <Calendar className="w-16 h-16 text-purple-300 mx-auto mb-6" />
-              <h3 className="text-5xl font-black text-white mb-3">1,460+</h3>
+              <h3 className="text-5xl font-black text-white mb-3">1050+</h3>
               <p className="text-white/90 text-lg font-semibold">Days Together</p>
             </div>
             <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-10 text-center transform hover:scale-110 transition-all border-2 border-white/20 hover:bg-white/20">
