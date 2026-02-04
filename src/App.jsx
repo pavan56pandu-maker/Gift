@@ -60,6 +60,10 @@ import Rat from './assets/video/Rat.mp4'
 import Orange from './assets/video/Orange.mp4'
 import Meow from './assets/video/Meow.mp4'
 import Bd from './assets/video/Bd.mp4'
+import Mmd1 from './assets/video/Mmd1.mp4'
+import Mmd2 from './assets/video/Mmd2.mp4'
+import Mmd3 from './assets/video/Mmd3.mp4'
+import Mmd4 from './assets/video/Mmd4.mp4'
 
 import { Heart, Camera, Video, Sparkles, Calendar, MapPin, Clock, Users, MessageCircle, Music, Gift, Star, Award, Smile, Coffee, Plane, BookOpen, Laugh, Trophy, Zap, ArrowRight, ChevronDown } from 'lucide-react';
 import { Download } from "lucide-react";
@@ -154,19 +158,22 @@ const downloadImage = async (url, filename) => {
   ];
 
   const videos = [
-    { id: 1, src: Dog, title: 'Our First Vlog', thumbnail: One, duration: '3:45' },
-    { id: 2, src: Abc, title: 'Birthday Surprise', thumbnail: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400', duration: '2:30' },
-    { id: 3, src: Song, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
-    { id: 4, src: Cell, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
-    { id: 5, src: Ball, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
-    { id: 6, src: Dance, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
-    { id: 7, src: Cat, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
-    { id: 8, src: Fish, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
-    { id: 9, src: Rat, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
-    { id: 10, src: Orange, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
-    { id: 11, src: Meow, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
-    { id: 12, src: Bd, title: 'Random Fun Times', thumbnail: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400', duration: '5:12' },
- 
+    { id: 1, src: Dog, title: 'Our First Vlog', thumbnail: Clg, duration: '3:45' },
+    { id: 2, src: Abc, title: 'Birthday Surprise', thumbnail: Five, duration: '2:30' },
+    { id: 3, src: Song, title: 'Random Fun Times', thumbnail: Six, duration: '5:12' },
+    { id: 4, src: Cell, title: 'Random Fun Times', thumbnail: New5, duration: '5:12' },
+    { id: 5, src: Ball, title: 'Random Fun Times', thumbnail: Two, duration: '5:12' },
+    { id: 6, src: Dance, title: 'Random Fun Times', thumbnail: New6, duration: '5:12' },
+    { id: 7, src: Cat, title: 'Random Fun Times', thumbnail: Four, duration: '5:12' },
+    { id: 8, src: Fish, title: 'Random Fun Times', thumbnail: Seven, duration: '5:12' },
+    { id: 9, src: Rat, title: 'Random Fun Times', thumbnail: Eight, duration: '5:12' },
+    { id: 10, src: Orange, title: 'Random Fun Times', thumbnail: One, duration: '5:12' },
+    { id: 11, src: Meow, title: 'Random Fun Times', thumbnail: Nine, duration: '5:12' },
+    { id: 12, src: Bd, title: 'Random Fun Times', thumbnail: New7, duration: '5:12' },
+    { id: 13, src: Mmd1, title: 'Random Fun Times', thumbnail: New8, duration: '5:12' },
+    { id: 14, src: Mmd2, title: 'Random Fun Times', thumbnail: New13, duration: '5:12' },
+    { id: 15, src: Mmd3, title: 'Random Fun Times', thumbnail: New18, duration: '5:12' },
+    { id: 16, src: Mmd4, title: 'Random Fun Times', thumbnail: New1, duration: '5:12' },
  
  
  
@@ -641,10 +648,10 @@ Our jokes never run out 😂, our smiles come naturally 😊, and even silence f
     <div className="bg-white rounded-2xl p-4 max-w-3xl w-full relative">
       
       {/* Close button */}
-     <button
-  onClick={() => setSelectedVideo(null)}
+     <button type="button" className="btn btn-primary" onClick={() => setSelectedVideo(null)}>
+  {/* onClick={() => setSelectedVideo(null)}
   className="absolute top-3 right-3 text-2xl font-bold text-gray-600 hover:text-red-500"
->
+> */}
   ✕
 </button>
 
@@ -662,7 +669,7 @@ Our jokes never run out 😂, our smiles come naturally 😊, and even silence f
       </h3>
     </div>
 
-  </div>
+   </div>
 )}
 
 
